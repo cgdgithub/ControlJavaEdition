@@ -119,7 +119,7 @@ public class DevicesControlManager {
 	* @param deviceType:设备类型(String类型)
 	*/
 	public void initDevicesControl(String deviceId, String deviceType) {
-		if((deviceId != null && deviceId != "") || (deviceType != null && deviceType != "")) {
+		if((deviceId != null || deviceId != "") || (deviceType != null || deviceType != "")) {
 			return;
 		}
 		DeviceInfo deviceInfo = getDeviceInfo(deviceId);
